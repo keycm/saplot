@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shoe Product Page</title>
+  <link rel="stylesheet" href="quantity.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <header class="navbar">
+    <div class="logo">
+      <img src="assets/Media (2) 1.png">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="product.php">Shop</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Customer service</a></li>
+      </ul>
+    </nav>
+    <div class="nav-icons">
+      <img src="assets/shopping-cart 1.png" alt="Cart" id="cartBtn">
+      <a href="login.php" class="logout">Log out</a>
+    </div>
+  </header>
+
+ <!------------ CART SIDEBAR --------->
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>Cart</h3>
+    <button id="closeCart"><img src="assets/close.png"></button>
+  </div>
+  <div id="cartItems"></div>
+  <div class="cart-footer">
+    <p>Total: ₱<span id="cartTotal">0.00</span></p>
+    <button class="checkout-btn" onclick="goTocart()">Checkout</button>
+    <button class="clear-cart-btn" id="clearCart">Clear Cart</button>
+  </div>
+</div>
+
+
+  
+  <!----------- Shoes------>
+  
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a> / 
+      <a href="product.php">All Products</a> / 
+      <span>Shoes name</span>
+    </nav>
+
+    <div class="product">
+      <div class="product-image">
+        <img src="assets/shoes3 1.png" alt="Blue Shoe">
+      </div>
+
+      <div class="product-details">
+        <h1>Shoes Name</h1>
+        <p class="price">₱3,000</p>
+        <div class="rating">★★★★☆</div>
+
+        <label for="quantity">Quantity*</label>
+        <div class="quantity-selector">
+          <input type="number" value="1" min="1" max="10" />
+        </div>
+
+        <label>Size*</label>
+        <div class="sizes">
+          <button>40</button>
+          <button>41</button>
+          <button>42</button>
+          <button>43</button>
+          <button>44</button>
+          <button>45</button>
+        </div>
+
+        <label>Color*</label>
+        <div class="colors">
+          <span class="color blue"></span>
+          <span class="color black"></span>
+        </div>
+
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now" onclick="goTocart()">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!------------ FOOTER ----->
+  <footer>
+  <div class="footer-container">
+    <div class="footer-section brand">
+      <img src="assets/Media (2) 1.png" alt="Saplot De Manila Logo" class="logo" />
+      <p>Welcome to Saplot De Manila, your go to destination for exquisite footwear. With a passion for quality and timeless style, we pride ourselves with this.</p>
+      <div class="social-icons">
+        <a href="#"><img src="assets/facebook (1).png" alt="" /></a>
+        <a href="#"><img src="assets/instagram 1.png" alt="" /></a>
+        <a href="#"><img src="assets/twitter 1.png" alt="" /></a>
+      </div>
+    </div>
+    
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About US</a></li>
+        <li><a href="#">Customer Service</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section payment">
+      <h3>Payment Method</h3>
+      <ul>
+        <li><i class="fas fa-chevron-right"></i> Gcash</li>
+        <li><i class="fas fa-chevron-right"></i> Bank Transfer</li>
+      </ul>
+    </div>
+    
+    <div class="footer-section address">
+      <h3>Address</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Fortuna, Floridablanca Pampanga</p>
+      <p><i class="fas fa-phone-alt"></i> +639 131 019 6878</p>
+      <p><i class="fas fa-envelope"></i> Saplot09209@gmail.com</p>
+    </div>
+  </div>
+  
+  <hr />
+  <div class="footer-bottom">
+    <img src="assets/Media (2) 1.png" alt="Saplot Logo" class="mini-logo" />
+    <span>Saplot De Manila, All Right Reserved</span>
+  </div>
+</footer>
+<script>
+function goTocart() {
+  window.location.href = "cart.php";
+}
+</script>
+<script src="product.js"></script>
+
+</script>
+</body>
+</html>

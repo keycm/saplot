@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saplot de Manila</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/Media (2) 1.png">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="product.php">Shop</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="customer service.html">Customer service</a></li>
+      </ul>
+    </nav>
+    <div class="nav-icons">
+      <img src="assets/shopping-cart 1.png" alt="Cart" id="cartBtn">
+      <a href="logout.php" class="logout">Log out</a>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <a href="#arrivals" class="shop-hero">Shop now</a>
+    </div>
+  </section>
+
+
+  <!-------- Whats new ---->
+
+
+  <div class="new" id="arrivals">
+  <section class="new-arrivals" >
+    <h2>Products</h2>
+    <div class="products-container" tabindex="0">
+
+
+      <!-- Adding Product -->
+
+
+      <article class="product-card">
+        <img src="assets/Nike-removebg-preview-removebg-preview.png"  loading="lazy"/>
+        <div class="product-name">Nike P6000</div>
+        <button class="shop-button" type="button" onclick="goToproduct()">Shop now</button>
+      </article>
+      <article class="product-card">
+        <img src="assets/new_balance_removebg-preview-removebg-preview.png"  loading="lazy"/>
+        <div class="product-name">New Balance</div>
+        <button class="shop-button" type="button"  onclick="goToproduct()">Shop now</button>
+      </article>
+      <article class="product-card" >
+        <img src="assets/KD-removebg-preview.png"  loading="lazy"/>
+        <div class="product-name">KD 17</div>
+        <button class="shop-button" type="button"  onclick="goToproduct()">Shop now</button>
+      </article>
+      <article class="product-card" >
+        <img src="assets/Immortality_4-removebg-preview.png"  loading="lazy">
+        <div class="product-name">Immortality 4</div>
+        <button class="shop-button" type="button"  onclick="goToproduct()">Shop now</button>
+      </article>
+      <article class="product-card" >
+        <img src="assets/Kobe-removebg-preview.png"  loading="lazy"/>
+        <div class="product-name">Kobe 6</div>
+        <button class="shop-button" type="button" onclick="goToproduct()">Shop now</button>
+      </article>
+      <article class="product-card" >
+        <img src="assets/Nike_running-removebg-preview.png"  loading="lazy" />
+        <div class="product-name">Nikezoom X</div>
+        <button class="shop-button" type="button"  onclick="goToproduct()">Shop now</button>
+      </article>
+      <article class="product-card">
+        <img src="assets/shoes3 1.png"  loading="lazy" />
+        <div class="product-name">Saplot</div>
+        <button class="shop-button" type="button"  onclick="goToproduct()">Shop now</button>
+      </article>
+      <article class="product-card" >
+        <img src="assets/shoes3 1.png"  loading="lazy" />
+        <div class="product-name">Saplot</div>
+        <button class="shop-button" type="button"  onclick="goToproduct()">Shop now</button>
+      </article>
+      <article class="product-card" >
+        <img src="assets/shoes3 1.png"  loading="lazy"/>
+        <div class="product-name">Saplot</div>
+        <button class="shop-button" type="button"  onclick="goToproduct()">Shop now</button>
+      </article>
+      <article class="product-card" >
+        <img src="assets/shoes3 1.png"  loading="lazy"/>
+        <div class="product-name">Saplot</div>
+        <button class="shop-button" type="button"  onclick="goToproduct()">Shop now</button>
+      </article>
+      <article class="product-card" >
+        <img src="assets/shoes3 1.png"  loading="lazy" />
+        <div class="product-name">Saplot</div>
+        <button class="shop-button" type="button"  onclick="goToproduct()">Shop now</button>
+      </article>
+      <article class="product-card" >
+        <img src="assets/shoes3 1.png"  loading="lazy" />
+        <div class="product-name">Saplot</div>
+        <button class="shop-button" type="button" onclick="goToproduct()">Shop now</button>
+      </article>
+      <article class="product-card" >
+        <img src="assets/shoes3 1.png"  loading="lazy" />
+        <div class="product-name">Saplot</div>
+        <button class="shop-button" type="button"  onclick="goToproduct()">Shop now</button>
+      </article>
+    </div>
+    <script>
+      function goToproduct() {
+        window.location.href = "product.php";
+      }
+    </script>
+
+  </section>
+  <section class="whats-new" >
+     <a href="product.php?category=running" class="category-card">
+    <img src="assets/sap7-Picsart-BackgroundRemover.jpg" onerror="this.style.display='none'" />
+    <span class="category-label">RUNNING</span>
+  </a>
+     <a href="product.php?category=basketball" class="category-card">
+      <img src="assets/sapsap-Picsart-BackgroundRemover.jpg"  onerror="this.style.display='none'" />
+      <span class="category-label">BASKETBALL</span>
+    </a>
+  </section>
+
+
+
+  <!-------- About us ---->
+
+
+<div class="about" id="about">
+  <section class="about-section">
+    <h2 class="section-title">About Us</h2>
+    <div class="about-container">
+      <div class="about-content">
+        <div class="text-box">
+          <p class="pppp">
+            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+            double click me to add your own content and make changes to the font. I’m a great place for you to
+            tell a story and let your users know a little more about you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-------FOOTER SECTION---->
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section brand">
+      <img src="assets/Media (2) 1.png" alt="Saplot De Manila Logo" class="logo" />
+      <p>Welcome to Saplot De Manila, your go to destination for exquisite footwear. With a passion for quality and timeless style, we pride ourselves with this.</p>
+      <div class="social-icons">
+        <a href="#"><img src="assets/facebook (1).png" alt="" /></a>
+        <a href="#"><img src="assets/instagram 1.png" alt="" /></a>
+        <a href="#"><img src="assets/twitter 1.png" alt="" /></a>
+      </div>
+    </div>
+    
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="product.php">Shop</a></li>
+        <li><a href="#">About US</a></li>
+        <li><a href="#">Customer Service</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section payment">
+      <h3>Payment Method</h3>
+      <ul>
+        <li><i class="fas fa-chevron-right"></i> Gcash</li>
+        <li><i class="fas fa-chevron-right"></i> COD</li>
+      </ul>
+    </div>
+    
+    <div class="footer-section address">
+      <h3>Address</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Fortuna, Floridablanca Pampanga</p>
+      <p><i class="fas fa-phone-alt"></i> +639 131 019 6878</p>
+      <p><i class="fas fa-envelope"></i> Saplot09209@gmail.com</p>
+    </div>
+  </div>
+  
+  <hr />
+  <div class="footer-bottom">
+    <img src="assets/Media (2) 1.png" alt="Saplot Logo" class="mini-logo" />
+    <span>Saplot De Manila, All Right Reserved</span>
+  </div>
+</footer>
+
+
+</body>
+</html>

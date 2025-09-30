@@ -1,0 +1,301 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30px; 
+    background-color: grey;
+    padding: 10px;
+    height: 100vh;
+    position: fixed;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    z-index: 1000; 
+}
+
+.sidebar.expanded {
+    width: 200px; 
+}
+.sidebar-boxes a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.sidebar a img {
+    height: 24px;
+    width: 24px;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.sidebar-boxes {
+    margin-top: 20px;
+    display: none; 
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar-boxes .box img {
+    width: 40px; 
+    height: 40px;
+}
+
+.sidebar.expanded .sidebar-boxes {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 20px;
+    color: #000;
+    text-align: left;
+    border-radius: 5px;
+    font-weight: bold;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.box:hover {
+    background-color: #e1e1e1;
+}
+
+/* Main Content */
+.main-content {
+    transition: filter 0.3s ease;
+}
+
+.sidebar.expanded ~ .main-content {
+    filter: blur(5px); 
+    pointer-events: none; 
+}
+
+.main-content {
+    margin-left: 50px;
+    flex-grow: 5;
+    transition: margin-left 0.3s ease;
+}
+
+.header {
+    background-color: #e9e9e9;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+    justify-content: space-between; 
+}
+
+.header .logo {
+    height: 50px;
+    margin-right: auto; 
+}
+
+
+
+/* Sales Chart */
+.sales-main-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.sales-container,
+.sales-order-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sales-container {
+    flex: 2;
+    min-width: 300px;
+}
+
+.sales-order-container {
+    flex: 1;
+    min-width: 280px;
+    height: 400px; 
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden; 
+}
+  
+
+.sales-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sales-header p {
+    color: #3f3fff; 
+    font-weight: bolder;
+}
+
+
+.sales-legend {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.sales-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.sales-earned {
+    background-color: #4b3cdb;
+}
+
+.sales-forecasted {
+    background-color: #00cc44;
+}
+
+.sales-dropdown {
+    padding: 6px 9px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+
+/* Order Time Chart */
+.sales-order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sales-report-btn {
+    background-color:#ffffff;
+    border: 1px solid #b9b9b9;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #3f3fff;
+}
+
+.sales-date-range {
+    font-size: 14px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.sales-order-legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.sales-legend-item {
+    text-align: center;
+}
+
+.sales-legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.dot-afternoon {
+    background-color: #3f3fff;
+}
+
+.dot-evening {
+    background-color: #888fff;
+}
+
+.dot-morning {
+    background-color: #cdd3ff;
+}
+
+
+#sales-order-chart {
+    width: 200px;  
+    height: 200px; 
+    max-width: 100%; 
+    max-height: 100%;
+    margin: 0 auto; 
+}
+
+
+
+/* Most Food Ordered */
+.card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px;
+    width: 350px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: 66%;
+    margin-top: -120px;
+}
+  
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: #333;
+}
+  
+.subtext {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 16px;
+}
+  
+.food-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+  
+.food-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.food-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+  
+.food-name {
+    flex-grow: 1;
+    color: #333;
+    font-size: 14px;
+}
+  
+.food-price {
+    font-weight: 600;
+    color: #666;
+    font-size: 14px;
+}
