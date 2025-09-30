@@ -6,43 +6,61 @@
   <title>Saplot de Manila</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
 <body>
   <header class="navbar">
     <div class="logo">
       <img src="assets/Media (2) 1.png">
+      <span class="brand-name">SAPLOT DE MANILA</span>
     </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="product.php">Shop</a></li>
-        <li><a href="#about">About us</a></li>
-        <li><a href="customer service.html">Customer service</a></li>
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="product.php">SHOP</a></li>
+        <li><a href="#about">BLOG</a></li>
+        <li><a href="customer service.html">CONTACT</a></li>
       </ul>
     </nav>
     <div class="nav-icons">
-      <img src="assets/shopping-cart 1.png" alt="Cart" id="cartBtn">
-      <a href="logout.php" class="logout">Log out</a>
+      <a href="#"><img src="assets/search (1) 1.png" alt="Search"></a>
+      <a href="cart.php">
+        <img src="assets/shopping-cart 1.png" alt="Cart" id="cartBtn">
+      </a>
     </div>
+    <a href="logout.php" class="logout-link">Log out</a>
   </header>
+
   <section class="hero">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    
     <div class="hero-content">
-      <a href="#arrivals" class="shop-hero">Shop now</a>
+      <h1 class="hero-heading">
+        Saplot New<br>
+        Collection!
+      </h1>
+      <p class="hero-subtext">
+        Discover our latest arrivals. Fresh styles, premium quality, and the iconic comfort you love. Shop the new collection today and define your look.
+      </p>
+      <a href="product.php" class="add-to-bag-btn">
+        <span class="plus-icon">+</span> ADD TO BAG
+      </a>
+    </div>
+    
+    <div class="hero-image-container">
+        <img src="assets/Kobe-removebg-preview.png" alt="New Shoe Collection" class="hero-product-img">
     </div>
   </section>
-
-
-  <!-------- Whats new ---->
 
 
   <div class="new" id="arrivals">
   <section class="new-arrivals" >
     <h2>Products</h2>
     <div class="products-container" tabindex="0">
-
-
-      <!-- Adding Product -->
 
 
       <article class="product-card">
@@ -131,10 +149,7 @@
 
 
 
-  <!-------- About us ---->
-
-
-<div class="about" id="about">
+  <div class="about" id="about">
   <section class="about-section">
     <h2 class="section-title">About Us</h2>
     <div class="about-container">
@@ -150,9 +165,6 @@
     </div>
   </section>
 </div>
-
-
-<!-------FOOTER SECTION---->
 
 
 <footer>
